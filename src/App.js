@@ -1,10 +1,18 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Search from './components/Search';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <MuiThemeProvider>
+        <div>
+          <Navbar />
+          <Search />
+        </div>
+      </MuiThemeProvider>
     </div>
   );
 }
